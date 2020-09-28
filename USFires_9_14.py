@@ -26,10 +26,10 @@ for fire in fire_data:
 print('brightness')
 print(brightness[:10])
 
-print('longitude')
+print('lons')
 print(lons[:10])
 
-print('latitude')
+print('lats')
 print(lats[:10])
 
 
@@ -45,7 +45,7 @@ data = [{
         'color':brightness,
         'colorscale':'Viridis',
         'reversescale':True,
-        'colorband':{'title':'Brightness'}
+        'colorbar':{'title':'Brightness'}
 
     }
 }]

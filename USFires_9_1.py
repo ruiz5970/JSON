@@ -26,10 +26,10 @@ for fire in fire_data:
 print('brightness')
 print(brightness[:10])
 
-print('longitude')
+print('lons')
 print(lons[:10])
 
-print('latitude')
+print('lats')
 print(lats[:10])
 
 
@@ -44,7 +44,7 @@ data = [{
         'color':brightness,
         'colorscale':'Viridis',
         'reversescale':True,
-        'colorband':{'title':'Brightness'}
+        'colorbar':{'title':'Brightness'}
 
     }
 }]
@@ -53,6 +53,6 @@ my_layout = Layout(title="US Fires - 9/1/2020 through 9/13/2020")
 
 fig = {'data': data,'layout':my_layout}
 
-offline.plot(fig,filename='US_Fires9_1.html')
+offline.plot(fig,filename='US_Fires_9_1.html')
 
 
